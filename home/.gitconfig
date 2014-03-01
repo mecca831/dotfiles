@@ -1,0 +1,12 @@
+[user]
+	name = Ko-Chih Wu
+	email = mecca831@gmail.com
+[color]
+	ui = true
+[log]
+	date = local
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
