@@ -1,0 +1,8 @@
+bind right:ctrl;cmd push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd push left bar-resize:screenSizeX/2
+bind up:ctrl;cmd move screenOriginX;screenOriginY screenSizeX;screenSizeY
+bind down:ctrl;cmd throw next
+
+#bind up:ctrl;cmd push up bar-resize:screenSizeY/2
+#bind down:ctrl;cmd push down bar-resize:screenSizeY/2
+bind esc:cmd hint
