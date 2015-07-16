@@ -22,6 +22,8 @@ Bundle 'groovyindent'
 Bundle 'bling/vim-airline'
 Bundle 'rainbow_parentheses.vim'
 Bundle 'Indent-Guides'
+Bundle 'rking/ag.vim'
+Bundle 'git-time-lapse'
 
 set langmenu=none
 let $LANG="zh_TW.UTF-8" " locales
@@ -83,12 +85,15 @@ set clipboard=unnamed
 syntax enable
 
 set laststatus=2
+set undodir=/tmp
+set udf
 
 map <leader>v <Plug>VimwikiToggleListItem
 nmap tn :tabnew<cr>
 nmap tc :tabclose<cr>
 nmap <Leader>o :NERDTreeToggle<cr>
 nmap <Leader>j :%!python -m json.tool<cr>
+map <leader>gt :call TimeLapse() <cr>
 
 filetype plugin indent on
 
@@ -112,3 +117,4 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:ctrlp_map = '<leader>p'
+let g:ctrlp_clear_cache_on_exit = 0
