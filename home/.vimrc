@@ -1,29 +1,36 @@
 " for vundle 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'molokai'
-Bundle 'vimwiki'
-Bundle 'The-NERD-tree'
-Bundle 'snipMate'
-Bundle 'AutoComplPop'
-Bundle 'YankRing.vim'
-Bundle 'surround.vim'
-Bundle 'EnhCommentify.vim'
-Bundle 'fugitive.vim'
-Bundle 'Markdown'
-Bundle 'mru.vim'
-Bundle 'taglist.vim'
-Bundle 'Solarized'
-Bundle 'https://github.com/w0ng/vim-hybrid.git'
-Bundle 'ctrlp.vim'
-Bundle 'groovyindent'
-Bundle 'bling/vim-airline'
-Bundle 'rainbow_parentheses.vim'
-Bundle 'Indent-Guides'
-Bundle 'rking/ag.vim'
-Bundle 'git-time-lapse'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'molokai'
+Plugin 'vimwiki'
+Plugin 'The-NERD-tree'
+"Plugin 'snipMate'
+Plugin 'AutoComplPop'
+Plugin 'YankRing.vim'
+Plugin 'surround.vim'
+Plugin 'EnhCommentify.vim'
+Plugin 'fugitive.vim'
+Plugin 'mru.vim'
+Plugin 'taglist.vim'
+Plugin 'Solarized'
+Plugin 'https://github.com/w0ng/vim-hybrid.git'
+Plugin 'ctrlp.vim'
+Plugin 'groovyindent'
+Plugin 'bling/vim-airline'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'Indent-Guides'
+Plugin 'rking/ag.vim'
+Plugin 'git-time-lapse'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'delimitMate.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'blp1526/storage.vim'
+Plugin 'chriskempson/base16-vim'
+call vundle#end()
 
 set langmenu=none
 let $LANG="zh_TW.UTF-8" " locales
@@ -117,4 +124,5 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:ctrlp_map = '<leader>p'
+let g:ctrlp_cmd = 'CtrlPMRUFiles'
 let g:ctrlp_clear_cache_on_exit = 0
