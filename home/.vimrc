@@ -1,31 +1,39 @@
 " for vundle 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
-Bundle 'molokai'
-Bundle 'vimwiki'
-Bundle 'The-NERD-tree'
-Bundle 'snipMate'
-Bundle 'YankRing.vim'
-Bundle 'surround.vim'
-Bundle 'EnhCommentify.vim'
-Bundle 'fugitive.vim'
-Bundle 'Markdown'
-Bundle 'mru.vim'
-Bundle 'taglist.vim'
-Bundle 'Solarized'
-Bundle 'https://github.com/w0ng/vim-hybrid.git'
-Bundle 'ctrlp.vim'
-Bundle 'groovyindent'
-Bundle 'bling/vim-airline'
-Bundle 'rainbow_parentheses.vim'
-Bundle 'Indent-Guides'
-Bundle 'neocomplcache'
-Bundle 'mattn/emmet-vim'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'molokai'
+Plugin 'vimwiki'
+Plugin 'The-NERD-tree'
+"Plugin 'snipMate'
+Plugin 'AutoComplPop'
+Plugin 'YankRing.vim'
+Plugin 'surround.vim'
+Plugin 'EnhCommentify.vim'
+Plugin 'fugitive.vim'
+Plugin 'mru.vim'
+Plugin 'taglist.vim'
+Plugin 'Solarized'
+Plugin 'https://github.com/w0ng/vim-hybrid.git'
+Plugin 'ctrlp.vim'
+Plugin 'groovyindent'
+Plugin 'bling/vim-airline'
+Plugin 'rainbow_parentheses.vim'
+Plugin 'Indent-Guides'
+Plugin 'rking/ag.vim'
+Plugin 'git-time-lapse'
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'delimitMate.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'blp1526/storage.vim'
+Plugin 'chriskempson/base16-vim'
 Plugin 'delimitMate.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'udalov/kotlin-vim'
+call vundle#end()
 
 set langmenu=none
 let $LANG="zh_TW.UTF-8" " locales
@@ -87,12 +95,15 @@ set clipboard=unnamed
 syntax enable
 
 set laststatus=2
+set undodir=/tmp
+set udf
 
 map <leader>v <Plug>VimwikiToggleListItem
 nmap tn :tabnew<cr>
 nmap tc :tabclose<cr>
 nmap <Leader>o :NERDTreeToggle<cr>
 nmap <Leader>j :%!python -m json.tool<cr>
+map <leader>gt :call TimeLapse() <cr>
 
 filetype plugin indent on
 
@@ -117,3 +128,5 @@ au Syntax * RainbowParenthesesLoadBraces
 
 let g:ctrlp_map = '<leader>p'
 let g:neocomplcache_enable_at_startup = 1
+let g:ctrlp_cmd = 'CtrlPMRUFiles'
+let g:ctrlp_clear_cache_on_exit = 0
