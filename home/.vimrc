@@ -7,7 +7,6 @@ Bundle 'molokai'
 Bundle 'vimwiki'
 Bundle 'The-NERD-tree'
 Bundle 'snipMate'
-Bundle 'AutoComplPop'
 Bundle 'YankRing.vim'
 Bundle 'surround.vim'
 Bundle 'EnhCommentify.vim'
@@ -22,6 +21,11 @@ Bundle 'groovyindent'
 Bundle 'bling/vim-airline'
 Bundle 'rainbow_parentheses.vim'
 Bundle 'Indent-Guides'
+Bundle 'neocomplcache'
+Bundle 'mattn/emmet-vim'
+Plugin 'delimitMate.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'udalov/kotlin-vim'
 
 set langmenu=none
 let $LANG="zh_TW.UTF-8" " locales
@@ -112,3 +116,4 @@ au Syntax * RainbowParenthesesLoadSquare
 au Syntax * RainbowParenthesesLoadBraces
 
 let g:ctrlp_map = '<leader>p'
+let g:neocomplcache_enable_at_startup = 1

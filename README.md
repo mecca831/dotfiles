@@ -1,9 +1,12 @@
 # Dotfiles
 
-Managed by [homesick](https://github.com/technicalpickles/homesick):
+Managed by [homeshick](https://github.com/andsens/homeshick), a [homesick](https://github.com/technicalpickles/homesick) implementation without the ruby dependency.
+
+## Install
 
 ```
-gem install homesick
-homesick clone mecca831/dotfiles
-homesick symlink dotfiles
+git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+homeshick clone mecca831/dotfiles
+homeshick symlink dotfiles
 ```
+

@@ -1,8 +1,11 @@
-bind right:ctrl;cmd push right bar-resize:screenSizeX/2
-bind left:ctrl;cmd push left bar-resize:screenSizeX/2
+bind right:ctrl;cmd chain push right bar-resize:screenSizeX/2 | corner top-right resize:screenSizeX/2;screenSizeY/2 | corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind left:ctrl;cmd chain push left bar-resize:screenSizeX/2 | corner top-left resize:screenSizeX/2;screenSizeY/2 | corner bottom-left resize:screenSizeX/2;screenSizeY/2
 bind up:ctrl;cmd move screenOriginX;screenOriginY screenSizeX;screenSizeY
-bind down:ctrl;cmd throw next
+bind down:ctrl;cmd throw next resize
 
 #bind up:ctrl;cmd push up bar-resize:screenSizeY/2
 #bind down:ctrl;cmd push down bar-resize:screenSizeY/2
 bind esc:cmd hint
+
+bind pageUp:ctrl;cmd corner top-right resize:screenSizeX/2;screenSizeY/2
+bind pageDown:ctrl;cmd corner bottom-right resize:screenSizeX/2;screenSizeY/2
