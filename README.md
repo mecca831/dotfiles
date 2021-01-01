@@ -6,6 +6,7 @@ Managed by [homeshick](https://github.com/andsens/homeshick), a [homesick](https
 
 ```
 git clone https://github.com/andsens/homeshick.git $HOME/.homesick/repos/homeshick
+source "$HOME/.homesick/repos/homeshick/homeshick.sh"
 homeshick clone mecca831/dotfiles
 homeshick symlink dotfiles
 ```
